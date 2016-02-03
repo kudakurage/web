@@ -1,0 +1,286 @@
+@charset "UTF-8";
+
+body {
+  background: #fff;
+  font-family: "Avenir Next" , Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+  color: #4d4d4d;
+  font-size: 22px;
+  line-height: 1.6;
+}
+a {
+  color: #00BCD4;
+  text-decoration:none
+}
+a:hover,a:focus,a:active {
+  text-decoration:underline
+}
+a img {
+  pointer-events: none;
+}
+input {
+  outline: none;
+}
+h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+b {
+  font-weight: bold;
+}
+.float_right {
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.float_left {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.text_center {
+  text-align: center;
+}
+.page_container {
+  text-align: center;
+}
+.page_container.color_bg {
+  background: #00BCD4;
+  color: #fff;
+}
+.page_container.white_bg h2 {
+  color: #00BCD4;
+}
+.container_inner {
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 100px 30px 120px;
+  text-align: left;
+  width: 740px;
+}
+
+
+/* ==================== Header ==================== */
+#header {
+  background: #00BCD4 url(../images/header_bg.jpg) no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  font-size: 24px;
+  padding: 200px 0;
+  text-align: center;
+}
+
+
+/* ==================== Contents ==================== */
+.video {
+  display: block;
+  position: relative;
+  margin: 0 -30px;
+}
+.video .video_cover {
+  display: inline-block;
+  width: 100%;
+}
+.video .video_play_button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -32px;
+  margin-left: -132px;
+  width: 264px;
+}
+
+.app_link {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+}
+.app_icon {
+  float: left;
+}
+.app_title_and_button {
+  margin-left: 280px;
+}
+.app_title {
+  margin: 30px 0;
+}
+.app_coming_soon {
+  color: #999;
+  font-size: 85%;
+  margin: 60px 0 -40px;
+  text-align: center;
+}
+
+.contact_form {
+  position: relative;
+  margin: 0 auto;
+  width: 540px;
+}
+.contact_form p {
+  margin-bottom: 20px;
+}
+.contact_form label {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+}
+.contact_form input,
+.contact_form textarea {
+  box-sizing: border-box;
+  border: 1px solid #E6E6E6;
+  border-radius: 2px;
+  background: #F2F2F2;
+  font-size: 16px;
+  padding: 15px;
+  width: 100%;
+  height: 50px;
+}
+.contact_form textarea {
+  height: 200px;
+  resize: none;
+}
+.contact_form .submit_button {
+  background: #00BCD4;
+  border: 0;
+  color: #fff;
+}
+.success_message,
+.error_message {
+  display: none;
+}
+.contact_form.success .success_message,
+.contact_form.error .error_message {
+  display: block;
+  text-align: center;
+  text-align: center;
+}
+.success_message {
+  width: 100%;
+  height: 300px;
+  padding-top: 220px;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.85);
+  color: #00BCD4;
+  position: absolute;
+  cursor: pointer;
+}
+.success_message p {
+  margin: 10px 0 20px;
+}
+.success_message span {
+  color: #999;
+  font-size: 16px;
+}
+.error_message {
+  font-size: 14px;
+  color: #FF3B30;
+}
+
+
+/* ==================== Footer ==================== */
+#footer .container_inner {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+.footer_logo {
+  margin-bottom: 5px;
+}
+.sns_link a {
+  display: inline-block;
+  margin: 0 5px;
+}
+.copyright {
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+
+/* ==================== Media Queries ==================== */
+@media (max-width: 800px) {
+  .container_inner {
+    width: auto;
+  }
+  .app_link {
+    width: 570px;
+    margin: 0 auto;
+  }
+  .app_icon {
+    width: 220px;
+  }
+  .app_title_and_button {
+    margin-left: 230px;
+  }
+  .app_title {
+    width: 320px;
+    margin: 40px 0 30px;
+  }
+}
+@media (max-width: 640px) {
+  body {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  #header {
+    padding: 100px 0;
+    font-size: 18px;
+  }
+  .header_logo img {
+    width: 80%;
+  }
+  .container_inner {
+    padding: 60px 30px 80px;
+  }
+  .video .video_play_button {
+    width: 180px;
+    margin-top: -22px;
+    margin-left: -90px;
+  }
+  .app_link {
+    width: auto;
+  }
+  .app_icon {
+    float: none;
+  }
+  .app_title_and_button {
+    margin: 0;
+  }
+  .swipe_illust {
+    width: 100px;
+  }
+  .contact_form {
+    width: auto;
+  }
+}
+@media (max-width: 420px) {
+  body {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  #header {
+    padding: 100px 0;
+    font-size: 14px;
+  }
+  .header_logo img {
+    width: 90%;
+  }
+  .container_inner {
+    padding: 60px 20px 60px;
+  }
+  .app_icon {
+    width: 160px;
+  }
+  .app_title {
+    width: 240px;
+  }
+  .swipe_illust {
+    display: none;
+  }
+  .app_coming_soon {
+    margin: 30px 0 -10px;
+  }
+}
