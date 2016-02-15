@@ -79,24 +79,6 @@ b {
 
 
 /* ==================== Contents ==================== */
-.video {
-  display: block;
-  position: relative;
-  margin: 0 -30px;
-}
-.video .video_cover {
-  display: inline-block;
-  width: 100%;
-}
-.video .video_play_button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -32px;
-  margin-left: -132px;
-  width: 264px;
-}
-
 .app_link {
   display: block;
   overflow: hidden;
@@ -110,12 +92,6 @@ b {
 }
 .app_title {
   margin: 30px 0;
-}
-.app_coming_soon {
-  color: #999;
-  font-size: 85%;
-  margin: 60px 0 -40px;
-  text-align: center;
 }
 
 .contact_form {
@@ -207,10 +183,6 @@ b {
   padding-top: 70px;
   padding-bottom: 60px;
   text-align: center;
-}
-.sns_link a {
-  display: inline-block;
-  margin: 0 5px;
 }
 .copyright {
   margin-top: 60px;
