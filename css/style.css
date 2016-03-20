@@ -17,6 +17,9 @@ a:hover,a:focus,a:active {
 a img {
   pointer-events: none;
 }
+img {
+  vertical-align: bottom;
+}
 input {
   outline: none;
 }
@@ -176,6 +179,18 @@ b {
 }
 .news_list a:hover {
   text-decoration: underline;
+}
+
+.media {
+  padding: 40px 20px;
+  background: #f9f9f9;
+}
+.media a {
+  display: inline-block;
+  margin: 0 15px;
+}
+.media a img {
+  height: 40px;
 }
 
 /* ==================== Footer ==================== */
